@@ -1,7 +1,6 @@
 from subprocess import call
 import sys
 
-
 projects_file = sys.argv[1]
 svn_path = sys.argv[2] 
 oldest_rev = sys.argv[3]
