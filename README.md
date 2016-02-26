@@ -7,7 +7,7 @@ Perform a `git svn clone` based on the last N revisions of the SVN repo.  This i
 # Syntax
 ./git-svn-cloneback.sh -u <SVN url> -l <limit>
 
-# Example: Clone just the last 500 revisions from the SVN HEAD
+# Example: Clone only the last 500 revisions from the latest SVN revision
 
 ./git-svn-cloneback.sh -u https://svn/proj/trunk -l 500
 
@@ -15,7 +15,7 @@ Perform a `git svn clone` based on the last N revisions of the SVN repo.  This i
 
 ./git-svn-cloneback.sh -u https://svn/proj/trunk@9871 -l 4
 
-# Example: Clone last 20 revisions into mydir
+# Example: Clone last 20 revisions into mydir and pass some parameters to the clone
 
 ./git-svn-cloneback.sh -u https://svn/proj/trunk -l 20 -o mydir --authors-file=svn-auth.txt
 ```
